@@ -73,7 +73,7 @@
             submitBtn.textContent = "Enviando...";
           }
 
-          fetch("https://formsubmit.co/ajax/brenda@brendaflores.com", {
+          fetch("https://formsubmit.co/ajax/brenda@brendaflores.co", {
             method: "POST",
             headers: {
               "Content-Type": "application/json",
@@ -92,7 +92,7 @@
             .catch(function () {
               if (note) {
                 note.textContent =
-                  "No pudimos enviar el formulario. Escríbenos directo por WhatsApp o a brenda@brendaflores.com.";
+                  "No pudimos enviar el formulario. Escríbenos directo por WhatsApp o a brenda@brendaflores.co.";
               }
             })
             .finally(function () {
