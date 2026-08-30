@@ -591,6 +591,108 @@
         height: auto;
       }
 
+      /* casos */
+      .casos {
+        background: var(--bg-alt);
+        border-top: 1px solid var(--line-soft);
+      }
+      .case-card {
+        margin-top: 40px;
+        background: #ffffff;
+        border: 1px solid var(--line);
+        border-radius: 6px;
+        padding: clamp(28px, 3.5vw, 48px);
+        display: grid;
+        gap: 28px;
+      }
+      .case-top {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+        justify-content: space-between;
+        gap: 12px;
+      }
+      .case-top h3 {
+        margin: 0;
+        font-size: clamp(24px, 2.6vw, 32px);
+        font-weight: 700;
+        letter-spacing: -0.03em;
+        line-height: 1;
+      }
+      .case-tag {
+        font-family: var(--mono);
+        font-size: 11px;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: var(--teal);
+      }
+      .case-stats {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 24px;
+        border-top: 1px solid var(--line);
+        border-bottom: 1px solid var(--line);
+        padding: 24px 0;
+      }
+      .case-stat .num {
+        font-family: var(--mono);
+        font-size: clamp(22px, 2.2vw, 28px);
+        font-weight: 600;
+        color: var(--accent);
+        letter-spacing: -0.02em;
+        line-height: 1.1;
+      }
+      .case-stat .lbl {
+        margin-top: 8px;
+        font-size: 14px;
+        line-height: 1.45;
+        color: var(--text-soft);
+        max-width: 30ch;
+      }
+      .case-body p {
+        margin: 0;
+        font-size: 16.5px;
+        line-height: 1.65;
+        color: var(--text);
+        text-wrap: pretty;
+      }
+      .case-body p + p {
+        margin-top: 14px;
+      }
+      .case-list {
+        display: grid;
+        gap: 8px;
+        margin-top: 16px;
+      }
+      .case-list div {
+        display: flex;
+        align-items: baseline;
+        gap: 10px;
+        font-size: 15.5px;
+        color: oklch(0.38 0.02 250);
+      }
+      .case-list span.tick {
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background: var(--teal);
+        flex: none;
+        transform: translateY(-1px);
+      }
+      .case-quote {
+        border-left: 2px solid var(--teal);
+        padding: 4px 0 4px 20px;
+      }
+      .case-quote p {
+        margin: 0;
+        font-size: clamp(17px, 1.6vw, 20px);
+        line-height: 1.4;
+        font-weight: 600;
+        letter-spacing: -0.01em;
+        color: var(--navy);
+        text-wrap: pretty;
+      }
+
       /* nosotros */
       .nosotros {
         background: var(--bg-alt);
