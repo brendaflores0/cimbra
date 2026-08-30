@@ -695,7 +695,7 @@
 
       /* nosotros */
       .nosotros {
-        background: var(--bg-alt);
+        background: var(--bg);
         border-top: 1px solid var(--line-soft);
       }
       .nosotros-head {
@@ -834,6 +834,10 @@
       }
 
       /* faq */
+      .faq-section {
+        background: var(--bg-alt);
+        border-top: 1px solid var(--line-soft);
+      }
       .faq-list {
         display: grid;
         gap: 0;
