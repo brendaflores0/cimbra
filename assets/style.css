@@ -434,6 +434,7 @@
         margin: 0;
         font-size: 17px;
         line-height: 1.6;
+        min-height: 8em;
         color: var(--text);
         text-wrap: pretty;
       }
