@@ -1,9 +1,12 @@
 <!doctype html>
 <!--
-  Plantilla de post del blog. NO se publica (Jekyll ignora los archivos que
-  empiezan con "_"). El workflow de n8n "Agente creador de Blog SEO" la lee,
+  Plantilla de post del blog. NO se publica (la GitHub Action "Publicar sitio"
+  la excluye). El workflow de n8n "Agente creador de Blog SEO" la lee,
   reemplaza los marcadores %%...%% y crea blog/<slug>/index.html en un PR.
-  Si cambias el diseño de los posts, cámbialo aquí.
+  El listado del blog y el sitemap los genera la Action a partir de las
+  etiquetas og:title, description y article:published_time: no las quites.
+  Si cambias el diseño de los posts, cámbialo aquí (los posts ya publicados
+  no se regeneran).
 -->
 <html lang="es-MX">
   <head>
